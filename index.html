@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get started to full stacking</title>
+</head>
+<body>
+    <h1>Apache Installation Steps</h1>
+
+    <ol>
+        <li><strong>Get the latest Apache Lounge Binary:</strong>For Windows,installation must be done from one of many binaries. Lounge is one of them. Visit Apache Lounge website <a href="https://www.apachelounge.com/download/">https://www.apachelounge.com/download/</a>.</li>
+
+        <li><strong>Download the .zip file:</strong> The top of the link is likely the latest.</li>
+        
+        <li><strong>Extract the .zip file:</strong> The result would be a folder named Apache24. I would normally extract it to C:/ .</li>
+        
+        <li><strong>Install Apache:</strong> Open up CMD. Navigate to Apache24\bin. Run 'httpd -k install'.</li>
+        
+        <li><strong>Start Apache:</strong> Run services.msc. Locate the service name Apache24 and start it.</li>
+        
+        <li><strong>Test Apache:</strong> Try access localhost on browser to see if the web service is running."It works" should be displayed rendered from index.html.</li>
+        
+        
+    </ol>
+
+    <h1>PHP Installation Steps</h1>
+    <ol>
+        <li><strong>Get the latest PHP for Windows:</strong>As of this is written,the URL is <a href="https://windows.php.net/download#php-8.2">https://windows.php.net/download#php-8.2</a></li>
+        <li><strong>Download the .zip file:</strong>Choose the thread safe version from the list .</li>
+        <li><strong>Extract the .zip file:</strong>
+            Make a folder before extracting to avoid clutter.The rest of the steps assuming the
+            .zip file is extracted to C:/PHP.
+        </li>
+        <li>
+            <strong>Configure Apache to handle .php file type:</strong>
+            Edit the file Apache24/httpd.conf.
+            Add the following lines(This applied to php 8 at the time of writing):<br>
+            &#8226;&emsp;LoadModule php_module "C:/PHP/php8apache2_4.dll"<br>
+            &#8226;&emsp;AddType application/x-httpd-php .php<br>
+            &#8226;&emsp;LoadFile "C:/PHP/php8ts.dll"<br>
+            &#8226;&emsp;PHPIniDir "C:/PHP"<br>
+        </li>
+        
+        <li><strong>Restart Apache service:</strong>Run services.msc.Locate the service name Apache24 and restart it. </li>
+        
+    </ol>
+
+    
+    <h1>MySQL Installation Steps</h1>
+
+<ol>
+    <li><strong>Get the latest MySQL Community for Windows:</strong>Community ver is free and ideal for self projects.
+        <a href="https://dev.mysql.com/downloads/">https://dev.mysql.com/downloads/</a></li>
+    <li><strong>Choose "MySQL installer for Windows":</strong></li>
+    <li><strong></strong></li>
+    <li><strong></strong></li>
+    <li><strong></strong></li>
+    <li><strong></strong></li>
+</ol>
+
+</body>
+</html>
