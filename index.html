@@ -67,22 +67,18 @@
         &#8226;&emsp;Click next<br>
         &#8226;&emsp;For the configuration prompt,preety much just click next on anything and keyin in Administrator password<br>
         &#8226;&emsp;Click finish<br>
-        
-
-										
-
-        
-        
+  
+    </li>
+    <li><strong>Configure PHP MYSQL extension:</strong>PHP MySQL extension needs to be enabled so that can talk to each other:<br>
+    
+        &#8226;&emsp;	    Edit php.ini file.By default no such file exist.We need to pick one of the 2 files (php.ini-production/php.ini-development)and rename it to php.ini.<br>
+        &#8226;&emsp;            Pick php.ini-development for more relaxed settings(more feedback & logging).I am preserving both so i made a copy & rename it to php.ini.<br>
+        &#8226;&emsp;            Uncomment the line containing "extension=mysqli" & "extension=pdo_mysql" by removing ';'.<br>
+        &#8226;&emsp;            Restart Apache service for changes to take effect.<br>
         
 
     </li>
-    <li><strong></strong></li>
-    <li><strong></strong></li>
-    <li><strong></strong></li>
-    <li><strong></strong></li>
-    <li><strong></strong></li>
-    <li><strong></strong></li>
-    <li><strong></strong></li>
+    
 </ol>
 
 </body>
